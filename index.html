@@ -217,7 +217,10 @@
     .tag:hover { border-color: rgba(56,178,172,0.4); color: var(--teal); background: var(--teal-dim); }
 
     /* PROJECTS */
-    .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .proj-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    @media (max-width: 1100px) {
+      .proj-grid { grid-template-columns: 1fr 1fr; }
+    }
     .proj-card {
       background: var(--surface); border: 1px solid var(--border);
       border-radius: 14px; overflow: hidden; display: flex; flex-direction: column;
@@ -391,7 +394,7 @@
 
 <div class="stats-strip">
   <div class="stat-cell"><div class="stat-n">9.0</div><div class="stat-l">CGPA</div></div>
-  <div class="stat-cell"><div class="stat-n">2+</div><div class="stat-l">AI Projects</div></div>
+  <div class="stat-cell"><div class="stat-n">3+</div><div class="stat-l">Featured Projects</div></div>
   <div class="stat-cell"><div class="stat-n">3+</div><div class="stat-l">Certifications</div></div>
   <div class="stat-cell"><div class="stat-n">'27</div><div class="stat-l">Graduating</div></div>
 </div>
@@ -437,7 +440,7 @@
       <div class="skill-block-title">Programming Languages</div>
       <div class="tags">
         <span class="tag">Java</span><span class="tag">Python</span>
-        <span class="tag">JavaScript</span><span class="tag">SQL</span>
+        <span class="tag">C#</span><span class="tag">JavaScript</span><span class="tag">SQL</span>
       </div>
     </div>
     <div class="skill-block">
@@ -451,7 +454,8 @@
       <div class="skill-block-title">Tools & Platforms</div>
       <div class="tags">
         <span class="tag">Git</span><span class="tag">GitHub</span>
-        <span class="tag">Browser Automation</span><span class="tag">Sentient Framework</span>
+        <span class="tag">Unity 3D</span><span class="tag">Browser Automation</span>
+        <span class="tag">Sentient Framework</span>
       </div>
     </div>
     <div class="skill-block">
@@ -459,6 +463,7 @@
       <div class="tags">
         <span class="tag">Data Structures</span><span class="tag">Algorithms</span>
         <span class="tag">Autonomous Agents</span><span class="tag">FSM</span>
+        <span class="tag">3D Game Development</span>
       </div>
     </div>
   </div>
@@ -467,7 +472,7 @@
 <section class="section" id="projects">
   <div class="sec-head"><span class="sec-eyebrow">03 — Projects</span><div class="sec-line"></div></div>
   <h2 class="sec-title">Selected Work</h2>
-  <p class="sec-sub">AI-powered projects built at the intersection of research and real-world application.</p>
+  <p class="sec-sub">AI-powered applications, 3D interactive games, and engineering solutions built at the intersection of innovation and real-world application.</p>
   <div class="proj-grid">
     <div class="proj-card">
       <div class="proj-top">
@@ -475,7 +480,7 @@
           <div class="proj-num">Project 01</div>
           <div class="proj-name">StockAgent</div>
         </div>
-        <a href="https://github.com/2303a510g5" target="_blank" class="proj-gh-link">
+        <a href="https://github.com/2303a510g5/Stockagent" target="_blank" class="proj-gh-link">
           <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
           GitHub
         </a>
@@ -522,6 +527,34 @@
         </div>
       </div>
     </div>
+    <div class="proj-card">
+      <div class="proj-top">
+        <div>
+          <div class="proj-num">Project 03</div>
+          <div class="proj-name">Treasure Hunt: Pirate Cove</div>
+        </div>
+        <a href="https://github.com/2303a510g5/TreasureHunt_PirateCove" target="_blank" class="proj-gh-link">
+          <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+      <div class="proj-body">
+        <ul class="proj-bullets">
+          <li>3D pirate-era endless runner game developed in Unity 6 and C# with custom physics.</li>
+          <li>Dynamic 3-lane pier spawner featuring procedurally generated obstacles, coins, chests, and stars.</li>
+          <li>Chasing pirate AI crew mechanics closing in on collisions with life-depletion states.</li>
+          <li>4 progressive levels with target distance challenges, rating systems, and persistent player data.</li>
+          <li>Procedural audio synthesis and custom Unity editor tooling for automated scene building.</li>
+        </ul>
+        <div class="proj-footer">
+          <span class="proj-tech">Unity 6</span>
+          <span class="proj-tech">C#</span>
+          <span class="proj-tech">3D Game Dev</span>
+          <span class="proj-tech">Procedural Audio</span>
+          <span class="proj-tech">Level Design</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -541,6 +574,10 @@
     <div class="achiev-item">
       <div class="achiev-bullet"></div>
       <div class="achiev-text">Active contributor to <strong>AI and agent-based system projects</strong> on GitHub.</div>
+    </div>
+    <div class="achiev-item">
+      <div class="achiev-bullet"></div>
+      <div class="achiev-text">Engineered <strong>Treasure Hunt: Pirate Cove</strong>, an interactive 3D endless runner in Unity 6 & C# with procedural mechanics and dynamic level progression.</div>
     </div>
   </div>
 </section>
